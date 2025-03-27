@@ -1,7 +1,7 @@
 from flask import Flask, redirect, render_template, request, url_for
 from config import config
 
-app = Flask(__name__, static_folder='../src/static', template_folder='../src/templates')
+app = Flask(__name__)
 
 @app.route("/")
 def index():
