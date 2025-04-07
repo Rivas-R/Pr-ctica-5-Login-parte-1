@@ -1,9 +1,8 @@
 {% extends './base.html' %} 
 
-{% block titulo %}Home{% endblock %} 
+{% block titulo %}Admin{% endblock %} 
 
 {% block cuerpo %}
-<h1>Welcome home, {{ current_user.username }}</h1>
-
+<h1>Welcome to admin, {{ current_user.fullname }}</h1>
 <a class="btn btn-danger" href="{{ url_for('logout') }}" >LogOut</a>
 {% endblock %}
